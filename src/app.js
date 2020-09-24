@@ -11,11 +11,28 @@ var chocolates = [
     "purple", "green", "blue", "blue", "red", "red", "silver", "purple", "silver", "crimson"
 ];
 
-//Progression 1: Add ___ chocolates of ____ color
+// Progression 1: Add ___ chocolates of ____ color
+function addChocolates(chocolates,color, count){
+if(count<=0)
+return "numbers cannot be zero or negative";
 
+for(var i=0;i<count;i++){
+    chocolates.unshift(color);
+}
+
+}
 
 //Progression 2: Remove ___ chocolates from the top the dispenser
 
+function removeChocolates(number,chocolates){
+    var arr=[];
+for(var i = 0; i <= number; i++){
+    
+    chocolates.shift();
+    arr.push();
+}
+return arr
+}
 
 //Progression 3: Dispense ___ chocolates
 
